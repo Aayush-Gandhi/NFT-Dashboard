@@ -7,7 +7,7 @@ export default function SideBar() {
             <div className='border rounded-2xl w-fit p-3 h-[92vh] flex flex-col divide-y-2 py-10'>
 
                 <div>
-                    <div className='flex flex-col items-center pb-8 gap-y-16'>
+                    <div className='flex flex-col items-center pb-10 gap-y-16'>
                         <div className='max-h-8'>
                             <img src="./Images/Vector.svg" alt=""  className='w-16'/>
                         </div>
@@ -15,7 +15,7 @@ export default function SideBar() {
                             <img src="./Images/Home.svg" alt=""   className='w-16'/>
                         </div>
                     </div>
-                    <div className='flex flex-col pb-16 items-center gap-y-12'>
+                    <div className='flex flex-col pb-16 items-center gap-y-16'>
                         <img src="./Images/Mail.svg" alt=""   className='w-8'/>
                         <img src="./Images/Cart.svg" alt=""   className='w-8'/>
                         <img src="./Images/Activity.svg" alt=""   className='w-8'/>
@@ -30,7 +30,7 @@ export default function SideBar() {
                         <img src="./Images/Settings.svg" alt=""   className='w-8'/>
                     </div>
                     <div>
-                        <BiLogOut className='w-12 h-12 text-[#02AAB0]' />
+                        <BiLogOut className='w-14 h-10 text-[#02AAB0]' />
                     </div>
                 </div>
 
