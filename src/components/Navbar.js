@@ -23,18 +23,29 @@ export default function Navbar() {
                 <button className='border rounded-2xl px-10 flex items-center'>
                     Create
                 </button>
-                <button className='border rounded-2xl px-10 flex items-center'>
+                <button className='border rounded-2xl px-10 flex items-center custom-border'>
                     Connect Wallet
                 </button>
             </div>
             <div className='flex items-center'>
-                    <img src="./Images/Profile.svg" alt="" className='w-16'/>
+                <img src="./Images/Profile.svg" alt="" className='w-16' />
                 <div className='flex flex-col text-left pl-4 pt-1'>
                     <span className='text-[#E2E4E9] text-xl'> Aayush Gandhi</span>
                     <span className='text-[#93C5FD] text-base'> aayushgandhi21@gmail.com</span>
                 </div>
-                <FiChevronDown className='ml-10 w-10 h-8'/>
+                <FiChevronDown className='ml-10 w-10 h-8' />
             </div>
+
+
+
+    
+
+
+
+
+
+
+
         </div>
     )
 }

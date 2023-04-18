@@ -7,8 +7,6 @@ export default function Graph({chartData}) {
     <div>
       <Bar 
       data={chartData}
-    //   height={400}
-    //   width={600}
       />
     </div>
   )

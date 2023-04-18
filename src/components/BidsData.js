@@ -29,7 +29,7 @@ export default function BidsData({ img, likes, name, ETH, p1, p2, p3 }) {
 
                 </div>
                 <div>
-                    <img src={img} alt="" className='rounded-2xl ' />
+                    <img src={img} alt="" className='rounded-2xl hover:scale-95 duration-700' />
                 </div>
                 <div className='pt-3'>
                     <span>{name} </span>

@@ -1,8 +1,5 @@
 import './App.css';
-import Dashboard from './components/Dashboard';
-import Graph from './components/Graph';
-import Profile from './components/Profile';
-
+import Dashboard from './components/Dashboard'
 
 function App() {
   return (

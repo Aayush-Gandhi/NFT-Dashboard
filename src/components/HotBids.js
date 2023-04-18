@@ -1,11 +1,10 @@
 import React from 'react'
-import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai'
 import Slider from 'react-slick';
 import BidsData from './BidsData';
 
 export default function HotBids() {
 
-    
+
 
     const settings = {
         dots: false,
@@ -13,10 +12,12 @@ export default function HotBids() {
         vertical: false,
         speed: 500,
         slidesToShow: 6,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        autoplay: true,
+        autoplaySpeed: 1500,
     };
 
-   
+
 
     const hotbids = [
         {
@@ -137,9 +138,8 @@ export default function HotBids() {
                     {
                         hotbids.map((data, index) => {
                             return (
-                                
-                                    <BidsData key={index} {...data}/>  
-                                
+                                <BidsData key={index} {...data} />
+
                             )
                         })
                     }

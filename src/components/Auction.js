@@ -72,11 +72,11 @@ export default function Auction() {
                                 return (
                                     // <div className='bg-black w-12 h-32 text-white'>1</div>
                                     <div className='relative p-2 overflow-hidden' key={index}>
-                                        <img src={data.img} alt="" className='rounded-3xl ' />
+                                        <img src={data.img} alt="" className='rounded-3xl hover:scale-105 duration-700' />
                                         <div className='border p-4 rounded-2xl bg-black/[.40] absolute left-10 bottom-10'>
 
                                             <div className='flex items-center text-white'>
-                                                <img src="./Images/Timer.svg" alt="" className='w-14'/>
+                                                <img src="./Images/Timer.svg" alt="" className='w-14' />
 
                                                 <div className='flex flex-col gap-2 text-left'>
                                                     <span className='text-3xl'>
@@ -91,7 +91,7 @@ export default function Auction() {
                                                 </div>
 
                                             </div>
-                                            <button className='border rounded-2xl p-2 w-full text-white'>Place A Bid</button>
+                                            <button className='glitch border rounded-2xl mt-4 p-2 w-full text-white'>Place A Bid</button>
 
                                         </div>
                                     </div>

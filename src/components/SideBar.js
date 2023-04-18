@@ -1,5 +1,9 @@
 import React from 'react'
 import { BiLogOut } from 'react-icons/bi'
+import { FiMail, FiClock,FiUsers, FiSettings } from 'react-icons/fi'
+import { IoCartOutline } from 'react-icons/io5'
+import { MdOutlineMonitorHeart } from 'react-icons/md'
+import { CiWallet } from 'react-icons/ci'
 
 export default function SideBar() {
     return (
@@ -9,27 +13,27 @@ export default function SideBar() {
                 <div>
                     <div className='flex flex-col items-center pb-10 gap-y-16'>
                         <div className='max-h-8'>
-                            <img src="./Images/Vector.svg" alt=""  className='w-16'/>
+                            <img src="./Images/Vector.svg" alt="" className='w-16' />
                         </div>
                         <div>
-                            <img src="./Images/Home.svg" alt=""   className='w-16'/>
+                            <img src="./Images/Home.svg" alt="" className='w-16' />
                         </div>
                     </div>
                     <div className='flex flex-col pb-16 items-center gap-y-16'>
-                        <img src="./Images/Mail.svg" alt=""   className='w-8'/>
-                        <img src="./Images/Cart.svg" alt=""   className='w-8'/>
-                        <img src="./Images/Activity.svg" alt=""   className='w-8'/>
-                        <img src="./Images/Clock.svg" alt=""   className='w-8'/>
+                        <FiMail size={32} className='mail text-[#00CDAC]' />
+                        <IoCartOutline size={38} className='cart text-[#00CDAC]' />
+                        <MdOutlineMonitorHeart size={35} className='cart text-[#00CDAC]' />
+                        <FiClock size={32} className='cart text-[#00CDAC]' />
                     </div>
                 </div>
 
                 <div className='flex flex-col justify-between h-full pt-16'>
                     <div className='flex flex-col items-center gap-y-12'>
-                        <img src="./Images/Wallet.svg" alt=""   className='w-8'/>
-                        <img src="./Images/User.svg" alt=""   className='w-8'/>
-                        <img src="./Images/Settings.svg" alt=""   className='w-8'/>
+                        <CiWallet size={35} className='cart text-[#00CDAC]'/>
+                        <FiUsers size={32} className='cart text-[#00CDAC]'/>
+                        <FiSettings size={32} className='cart text-[#00CDAC]'/>
                     </div>
-                    <div>
+                    <div className=''>
                         <BiLogOut className='w-14 h-10 text-[#02AAB0]' />
                     </div>
                 </div>

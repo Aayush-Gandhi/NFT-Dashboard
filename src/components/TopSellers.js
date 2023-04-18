@@ -97,7 +97,7 @@ export default function TopSellers() {
                             return (
                                 <div className='pb-5' key={index}>
                                     <div className='flex items-center gap-4'>
-                                        <img src={data.img} alt="" className='w-20' />
+                                        <img src={data.img} alt="" className='w-20 hover:scale-95 duration-700' />
                                         <div className='flex flex-col text-left'>
                                             <span className='text-xl'>{data.uname}</span>
                                             <span className='text-[#5EEAD4]'>{data.bids}</span>
