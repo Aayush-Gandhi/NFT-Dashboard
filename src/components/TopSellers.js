@@ -14,6 +14,7 @@ export default function TopSellers() {
         speed: 500,
         arrows: true,
         slidesToShow: 6,
+        arrows: true,
         slidesToScroll: 1,
         beforeChange: (oldIndex, newIndex) =>
             setProgress((newIndex / (topsellers.length - 1)) * 100),
@@ -85,7 +86,7 @@ export default function TopSellers() {
     ]
 
     return (
-        <div>
+        <div className='text-white'>
             <div>
                 <span className='flex items-center text-[#6EE7B7] font-bold text-2xl pt-4'> <AiFillStar className='text-[yellow]' /> Top Sellers </span>
             </div>
@@ -109,7 +110,7 @@ export default function TopSellers() {
                         })
                     }
                 </Slider>
-                <div className='progress-bar' style={{ width: `${progress}%` }}></div>
+                <div className='progress-bar' style={{ width: `${progress+45}%` }}></div>
             </div>
         </div>
     )

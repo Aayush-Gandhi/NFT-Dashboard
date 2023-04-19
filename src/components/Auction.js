@@ -23,6 +23,7 @@ export default function Auction() {
         vertical: false,
         speed: 500,
         slidesToShow: 2,
+        arrows: false,
         slidesToScroll: 1
     };
 
@@ -71,8 +72,10 @@ export default function Auction() {
                             liveauction.map((data, index) => {
                                 return (
                                     // <div className='bg-black w-12 h-32 text-white'>1</div>
-                                    <div className='relative p-2 overflow-hidden' key={index}>
-                                        <img src={data.img} alt="" className='rounded-3xl hover:scale-105 duration-700' />
+                                    <div className='relative p-2' key={index}>
+                                        <div className='overflow-hidden rounded-2xl'>
+                                            <img src={data.img} alt="" className='rounded-3xl hover:scale-105 duration-700' />
+                                        </div>
                                         <div className='border p-4 rounded-2xl bg-black/[.40] absolute left-10 bottom-10'>
 
                                             <div className='flex items-center text-white'>

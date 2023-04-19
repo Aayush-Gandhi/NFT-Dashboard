@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { BsChevronRight } from 'react-icons/bs'
 import Graph from './Graph'
 import { UserData } from './GraphData'
+import 'animate.css';
 
 export default function Profile() {
 
@@ -29,7 +30,7 @@ export default function Profile() {
 
         const gradient = ctx.createLinearGradient(0, 0, 0, 250);
         gradient.addColorStop(0, "#47E2EC");
-        gradient.addColorStop(0.4932, "#5C98DF");
+        gradient.addColorStop(0.2932, "#5C98DF");
         gradient.addColorStop(1, "#A314D5");
 
         setUserData({
@@ -49,27 +50,27 @@ export default function Profile() {
     }, [data])
 
     return (
-        <div className='border rounded-2xl w-[480px] py-10 px-5'>
+        <div className='border rounded-2xl animate__animated animate__rotateInDownRight w-[480px] py-10 px-5 text-white'>
             <div className='text-center'>
-                <span className='text-5xl'> My Profile</span>
+                <h1 className='text-5xl'>My Profile</h1>
                 <img src="./Images/MyProfile.svg" alt="" className='m-auto py-10' />
                 <span className='text-3xl'>Aayush Gandhi</span>
             </div>
             <div className='flex justify-between text-xl py-5 text-center'>
                 <div className='flex flex-col'>
-                    <button className='border rounded-2xl py-4 px-5 '> 120 </button>
+                    <button className='border rounded-2xl py-4 px-5 custom-border'> 120 </button>
                     Asset
                 </div>
                 <div className='flex flex-col'>
-                    <button className='border rounded-2xl py-4 px-5 '> 10K </button>
+                    <button className='border rounded-2xl py-4 px-5 custom-border'> 10K </button>
                     Followers
                 </div>
                 <div className='flex flex-col'>
-                    <button className='border rounded-2xl py-4 px-5 '> 70K </button>
+                    <button className='border rounded-2xl py-4 px-5 custom-border'> 70K </button>
                     Likes
                 </div>
                 <div className='flex flex-col'>
-                    <button className='border rounded-2xl py-4 px-5 '> 60 </button>
+                    <button className='border rounded-2xl py-4 px-5 custom-border'> 60 </button>
                     Bidding
                 </div>
             </div>
@@ -80,7 +81,7 @@ export default function Profile() {
                         <img src="./Images/Ethereum.svg" alt="" className='w-14' />
                         <span className='text-2xl font-bold'>4,668 ETH </span>
                     </div>
-                    <button className='flex items-center text-xl'>Add <BsChevronRight /> </button>
+                    <button className='flex items-center text-xl'>Add<BsChevronRight /> </button>
                 </div>
             </div>
             <div>
@@ -91,7 +92,7 @@ export default function Profile() {
                             {selectedOption || "Select an option"}
                         </button>
                         {isOpen && (
-                            <ul className='absolute bg-white right-5 w-24 px-10'>
+                            <ul className='absolute bg-[#03032b] border w-44 -right-5 space-y-4 py-5 px-16'>
                                 <li onClick={() => handleOptionClick("january")}>January</li>
                                 <li onClick={() => handleOptionClick("february")}>February</li>
                                 <li onClick={() => handleOptionClick("march")}>March</li>
@@ -109,7 +110,7 @@ export default function Profile() {
                     </div>
                 </div>
             </div>
-            <div className='border rounded-3xl w-[90%] m-auto p-4'>
+            <div className='border rounded-3xl w-[90%] m-auto p-4 hover:scale-110 duration-700'>
                 {userData && <Graph chartData={userData} />}
             </div>
             <div className='pt-5'>
@@ -118,34 +119,39 @@ export default function Profile() {
                     <span>See All</span>
                 </div>
                 <div>
-                    <div className='flex items-center mt-5 bg-[#212760] rounded-3xl p-2 text-white'>
-                        <div>
+                    <div className='flex justify-between items-center mt-5 bg-[#212760] rounded-3xl p-2 text-white'>
+                        <div className='flex'>
                             <img src="./Images/Activity1.png" alt="" className='w-24' />
+                            <div className='flex flex-col justify-around pl-4'>
+                                <span>Crystal_Art</span>
+                                <span>by @rudepixxel</span>
+                            </div>
                         </div>
-                        <div className='flex flex-col'>
-                            <span>Crystal_Art</span>
-                            <span>by @rudepixxel</span>
-                        </div>
+
                         <div className='flex flex-col'>
                             <span>New Bid</span>
                             <span>6.25 ETH</span>
                             <span>3m ago</span>
                         </div>
                     </div>
-                    <div className='flex items-center mt-5 bg-[#212760] rounded-3xl p-2'>
-                        <div>
+
+                    <div className='flex justify-between items-center mt-5 bg-[#212760] rounded-3xl p-2'>
+                        <div className='flex'>
                             <img src="./Images/Activity2.png" alt="" className='w-24' />
+                            <div className='flex flex-col justify-around pl-4'>
+                                <span>Crystal_Art</span>
+                                <span>by @rudepixxel</span>
+                            </div>
                         </div>
-                        <div>
-                            <span>Crystal_Art</span>
-                            <span>by @rudepixxel</span>
-                        </div>
-                        <div>
+
+                        <div className='flex flex-col justify-between'>
                             <span>New Bid</span>
                             <span>6.25 ETH</span>
                             <span>3m ago</span>
                         </div>
+
                     </div>
+
                 </div>
             </div>
         </div>

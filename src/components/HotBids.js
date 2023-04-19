@@ -15,6 +15,7 @@ export default function HotBids() {
         slidesToScroll: 2,
         autoplay: true,
         autoplaySpeed: 1500,
+        arrows: false,
     };
 
 
@@ -131,7 +132,7 @@ export default function HotBids() {
     ]
 
     return (
-        <div className='pt-10'>
+        <div className='pt-10 text-white'>
             <div className='text-left text-2xl text-[#A5F3FC] font-semibold'>🔥 Hot Bids</div>
             <div className='w-[66vw] py-5'>
                 <Slider {...settings}>

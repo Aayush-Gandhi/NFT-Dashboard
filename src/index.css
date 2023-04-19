@@ -1,6 +1,7 @@
 body {
   padding: 2%;
   margin: 0;
+  background: #03032b;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -33,6 +34,9 @@ body {
   transition: width 0.5s ease-in-out;
 }
 
+.clock {
+  color: linear-gradient(90deg, #2193B0 0%, #6DD5ED 100%);
+}
 /* Define the hover state with updated border gradient */
 /* .custom-border:hover {
   border-radius: 20px;
@@ -43,13 +47,17 @@ body {
 } */
 
 .custom-border:hover {
-  background: linear-gradient(white, rgb(255, 255, 255)) padding-box,
+  background: linear-gradient(#1e1e25, #04043a) padding-box,
     linear-gradient(to right, #1FA2FF, #12D8FA, #A6FFCB) border-box;
   border-radius: 12px;
   box-shadow: 0 5px 1rem 0.5px rgba(31, 162, 255, 0.5);
   transition: all 0.5s ease;
   border: 2px solid transparent;
 }
+.custom-bg{
+  /* background:linear-gradient(135.34deg, #bbbcc4 50.61%, rgba(255, 255, 255, 0) 50.29%); */
+}
+
 
 
 /* Custom Button */
@@ -159,8 +167,7 @@ body {
 
 
 
-.mail:hover {
-  border: linear-gradient(180deg, #3461FF 0%, #8454EB 100%);
-  box-shadow: 3px 5px 14px rgba(89, 62, 255, 0.54);
-  
-}
+
+
+
+
