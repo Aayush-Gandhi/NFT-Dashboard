@@ -10,12 +10,48 @@ export default function TopSellers() {
 
     const settings = {
         dots: false,
-        infinite: false ,
+        infinite: false,
         speed: 500,
         arrows: true,
         slidesToShow: 6,
         arrows: true,
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1441,
+                settings: {
+                    slidesToShow: 4,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: false,
+                    autoplay: true,
+                    autoplaySpeed: 1500,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: false,
+                    autoplay: true,
+                    autoplaySpeed: 1500,
+                }
+            },
+            {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false,
+                    autoplay: true,
+                    autoplaySpeed: 1500,
+                }
+            },
+        ],
         beforeChange: (oldIndex, newIndex) =>
             setProgress((newIndex / (topsellers.length - 1)) * 100),
     };
@@ -91,7 +127,7 @@ export default function TopSellers() {
                 <span className='flex items-center text-[#6EE7B7] font-bold text-2xl pt-4'> <AiFillStar className='text-[yellow]' /> Top Sellers </span>
             </div>
 
-            <div className='w-[67vw] pt-4 slider-container'>
+            <div className='w-[82vw] ml-6 md:ml-0 md:w-[95vw] lg:w-[67vw] pt-4 slider-container'>
                 <Slider {...settings}>
                     {
                         topsellers.map((data, index) => {
@@ -105,12 +141,11 @@ export default function TopSellers() {
                                         </div>
                                     </div>
                                 </div>
-
                             )
                         })
                     }
                 </Slider>
-                <div className='progress-bar' style={{ width: `${progress+45}%` }}></div>
+                <div className='progress-bar' style={{ width: `${progress + 45}%` }}></div>
             </div>
         </div>
     )

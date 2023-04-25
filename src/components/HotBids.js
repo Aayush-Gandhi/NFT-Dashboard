@@ -16,6 +16,36 @@ export default function HotBids() {
         autoplay: true,
         autoplaySpeed: 1500,
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 1441,
+                settings: {
+                    slidesToShow: 4,
+                    arrows: true,
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                }
+            },
+        ]
     };
 
 
@@ -134,7 +164,7 @@ export default function HotBids() {
     return (
         <div className='pt-10 text-white'>
             <div className='text-left text-2xl text-[#A5F3FC] font-semibold'>🔥 Hot Bids</div>
-            <div className='w-[66vw] py-5'>
+            <div className='w-[90vw] ml-16 mx-auto md:ml-0 md:w-[95vw] lg:w-[67vw] py-5'>
                 <Slider {...settings}>
                     {
                         hotbids.map((data, index) => {

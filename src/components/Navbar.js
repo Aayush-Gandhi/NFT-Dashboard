@@ -7,7 +7,7 @@ import 'animate.css';
 
 export default function Navbar() {
     return (
-        <div className='flex gap-20'>
+        <div className='hidden lg:flex gap-20'>
             <div className='relative'>
                 <input type="text" placeholder='Search by creator or collection' className='w-[550px] border rounded-2xl text-center p-5 placeholder:text-[#A1A5B6] text-xl custom-border custom-bg' />
                 <BiSearch className='absolute -translate-y-12 translate-x-5 w-10 h-6 text-[#A1A5B6]' />
