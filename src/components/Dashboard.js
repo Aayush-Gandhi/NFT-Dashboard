@@ -13,7 +13,7 @@ export default function Dashboard() {
             <div>
                 <SideBar />
             </div>
-            <div>
+            <div className='relative w-[100%]'>
                 <Navbar />
                 <Auction/>
                 <TopSellers />

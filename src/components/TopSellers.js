@@ -145,7 +145,7 @@ export default function TopSellers() {
                         })
                     }
                 </Slider>
-                <div className='progress-bar' style={{ width: `${progress + 45}%` }}></div>
+                <div className='progress-bar hidden lg:block' style={{ width: `${progress + 45}%` }}></div>
             </div>
         </div>
     )

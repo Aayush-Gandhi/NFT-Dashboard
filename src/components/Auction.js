@@ -85,9 +85,8 @@ export default function Auction() {
     ]
 
     return (
-        <div>
+   
             <div>
-
                 <div className='flex justify-between items-center pb-5 lg:pt-16'>
                     <span className='text-md lg:text-4xl text-[#E2E4E9]'>Popular NFT’s Live Auction</span>
                     <button className='flex items-center text-[#5EEAD4]'>Show More <BsChevronRight /> </button>
@@ -131,6 +130,5 @@ export default function Auction() {
                     </Slider>
                 </div>
             </div>
-        </div >
     )
 }

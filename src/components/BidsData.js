@@ -10,7 +10,6 @@ export default function BidsData({ img, likes, name, ETH, p1, p2, p3 }) {
 
     };
     return (
-        <div>
             <div className='w-[200px]'>
                 <div className='flex items-center justify-between'>
                     <div className='relative w-20'>
@@ -43,6 +42,5 @@ export default function BidsData({ img, likes, name, ETH, p1, p2, p3 }) {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
