@@ -17,7 +17,7 @@ export default function TopSellers() {
         arrows: true,
         slidesToScroll: 1,
         responsive: [
-            {
+            { 
                 breakpoint: 1441,
                 settings: {
                     slidesToShow: 4,
@@ -127,7 +127,7 @@ export default function TopSellers() {
                 <span className='flex items-center text-[#6EE7B7] font-bold text-2xl pt-4'> <AiFillStar className='text-[yellow]' /> Top Sellers </span>
             </div>
 
-            <div className='w-[82vw] ml-6 md:ml-0 md:w-[95vw] lg:w-[67vw] pt-4 slider-container'>
+            <div className='w-[82vw] ml-6 md:ml-0 md:w-[95vw] lg:w-[90vw] pt-4 slider-container'>
                 <Slider {...settings}>
                     {
                         topsellers.map((data, index) => {

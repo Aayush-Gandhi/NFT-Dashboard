@@ -8,7 +8,7 @@ import { CiWallet } from 'react-icons/ci'
 export default function SideBar() {
     return (
         <div className='hidden lg:block'>
-            <div className='border rounded-2xl w-fit p-3 h-[92vh] flex flex-col divide-y-2 py-10'>
+            <div className='border rounded-2xl w-fit p-3 h-[130vh] flex flex-col divide-y-2 py-10'>
 
                 <div>
                     <div className='flex flex-col items-center pb-10 gap-y-16'>

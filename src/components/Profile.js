@@ -49,8 +49,8 @@ export default function Profile() {
         })
     }, [data])
 
-    return (
-        <div className='hidden lg:block border rounded-2xl animate__animated animate__rotateInDownRight w-[480px] py-10 px-5 text-white'>
+    return (    
+        <div className='hidden lg:block border rounded-2xl animate__animated animate__rotateInDownRight w-[480px] py-5 px-5 text-white'>
             <div className='text-center'>
                 <h1 className='text-5xl'>My Profile</h1>
                 <img src="./Images/MyProfile.svg" alt="" className='m-auto py-10' />

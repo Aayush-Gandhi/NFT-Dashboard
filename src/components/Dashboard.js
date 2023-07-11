@@ -9,7 +9,7 @@ import HotBids from './HotBids'
 export default function Dashboard() {
   return (
     <div>
-        <div className='flex lg:gap-20'>
+        <div className='flex lg:gap-10'>
             <div>
                 <SideBar />
             </div>

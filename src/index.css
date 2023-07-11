@@ -1,5 +1,5 @@
 body {
-  padding:2% 2% 0 2% ;
+  padding:0.5% 2% 0 2% ;
   margin: 0;
   background: #03032b;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,6 +7,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transform: scale(0.75);
+  transform-origin: top left;
+  width: 133.33%;
+  margin-bottom: -316% !important;
 }
 
 * {

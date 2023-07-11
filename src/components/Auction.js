@@ -87,12 +87,12 @@ export default function Auction() {
     return (
    
             <div>
-                <div className='flex justify-between items-center pb-5 lg:pt-16'>
+                <div className='flex justify-between items-center pb-5 lg:pt-5'>
                     <span className='text-md lg:text-4xl text-[#E2E4E9]'>Popular NFT’s Live Auction</span>
                     <button className='flex items-center text-[#5EEAD4]'>Show More <BsChevronRight /> </button>
                 </div>
 
-                <div className='w-[82vw] ml-6 md:ml-0 md:w-[95vw] lg:w-[67vw]'>
+                <div className='w-[82vw] ml-6 md:ml-0 md:w-[95vw] lg:w-[90vw]'>
                     <Slider {...settings}>
                         {
                             liveauction.map((data, index) => {
